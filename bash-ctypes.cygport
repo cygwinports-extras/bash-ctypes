@@ -1,0 +1,16 @@
+NAME="bash-ctypes"
+VERSION=1.1
+RELEASE=1
+CATEGORY="Shells"
+SUMMARY="FFI interface for Bash shell"
+DESCRIPTION="ctypes.sh is a bash plugin that provides a foreign function
+interface directly in your shell. In other words, it allows you to call
+routines in shared libraries from within bash."
+HOMEPAGE="https://github.com/taviso/ctypes.sh"
+SRC_URI="${HOMEPAGE}/releases/download/v${VERSION}/ctypes-sh-${VERSION}.tar.gz"
+SRC_DIR="ctypes-sh-${VERSION}"
+PATCH_URI="
+	1.1-cygwin-no-undefined.patch
+	1.1-cygwin-dlsym.patch
+	1.1-cygwin-tests.patch
+"
